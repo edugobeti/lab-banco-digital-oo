@@ -1,5 +1,5 @@
 
-public abstract class Conta implements IConta {
+public class Conta implements IConta {
 	
 	private static final int AGENCIA_PADRAO = 1;
 	private static int SEQUENCIAL = 1;
@@ -43,7 +43,8 @@ public abstract class Conta implements IConta {
 		return saldo;
 	}
 
-	protected void imprimirInfosComuns() {
+	@Override
+	public void imprimirExtrato() {
 		System.out.println(String.format("Titular: %s", this.cliente.getNome()));
 		System.out.println(String.format("Agencia: %d", this.agencia));
 		System.out.println(String.format("Numero: %d", this.numero));

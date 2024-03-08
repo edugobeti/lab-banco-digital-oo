@@ -1,13 +1,14 @@
 
-public class ContaPoupanca extends Conta {
+public class ContaPoupanca {
 
-	public ContaPoupanca(Cliente cliente) {
-		super(cliente);
+	private Conta conta;
+
+	public ContaPoupanca(Cliente cliente, Conta conta) {
+		super();
 	}
 
-	@Override
 	public void imprimirExtrato() {
-		System.out.println("=== Extrato Conta Poupança ===");
-		super.imprimirInfosComuns();
+		System.out.println("=== Extrato Conta Poupanï¿½a ===");
+		conta.imprimirExtrato();
 	}
 }
