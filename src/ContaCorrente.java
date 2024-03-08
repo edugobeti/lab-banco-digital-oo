@@ -13,6 +13,9 @@ public class ContaCorrente {
 	public void imprimirExtrato() {
 		System.out.println("=== Extrato Conta Corrente ===");
 		conta.imprimirExtrato();
+		System.out.println(String.format("Saldo: %.2f", conta.getSaldo()));
+		System.out.println(String.format("Limite Especial: %s", limiteCartao));
+		System.out.println(String.format("Limite Cartão: %s", limiteCartao));
 	}
 	
 	public void analiseCredito(){

@@ -10,5 +10,6 @@ public class ContaPoupanca {
 	public void imprimirExtrato() {
 		System.out.println("=== Extrato Conta Poupan�a ===");
 		conta.imprimirExtrato();
+		System.out.println(String.format("Saldo: %.2f", conta.getSaldo()));
 	}
 }
